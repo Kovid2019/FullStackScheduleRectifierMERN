@@ -1,0 +1,38 @@
+# Schedule Rectifier API
+
+@baseUrl= http://localhost:8000/api/v1/tasks
+
+### POST the task list
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+
+    "task" : "Coding",
+    "hr": 30,
+    "type": "bad"
+    
+}
+### GET the task list
+GET {{baseUrl}}
+
+
+### Update the task list
+PATCH  {{baseUrl}}
+Content-Type: application/json
+
+{
+    "_id":"66bae2734fa2e454c1662d62",
+    "type" : "bad"
+    
+}
+
+### Delete the task list
+DELETE {{baseUrl}}
+Content-Type: application/json
+
+[
+    "66caef043ed805f60c76900d",
+    "66caf0b63ed805f60c76900f",
+    "66ce1c9878495d851626908e"
+]
